@@ -1,0 +1,39 @@
+@import "./reset";
+
+* {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  color: #f5f5f5;
+}
+
+body {
+  position: relative;
+  background: #171717;
+}
+
+section {
+  display: flex;
+  gap: 16px;
+}
+
+.time {
+  flex: none;
+}
+
+.time::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.text,
+.time {
+  outline: none;
+  background: transparent;
+  font-weight: 500;
+}
+
+p,
+.text::placeholder {
+  color: rgba(245, 245, 245, 0.5);
+}
